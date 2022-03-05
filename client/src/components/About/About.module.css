@@ -1,0 +1,29 @@
+.profile{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profileText{
+    position: relative;
+    z-index: 1;
+    max-width: 30vw;
+    padding: 2vw;
+    border-radius: 20px;
+}
+
+.profileImage{
+    max-width: 350px;
+    display: block;
+    margin: 20px;
+    align-self: center;
+}
+
+.header{
+    font-size: 40px;
+}
+.text{
+    font-size: 15px;
+    text-align: left;
+}
