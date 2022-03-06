@@ -3,10 +3,12 @@ import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core'
 import { useDispatch  } from 'react-redux';
 
 import { getPosts, deletePost } from '../../actions/posts';
-import Posts from './../Posts/Posts';
-import Form from './../Form/Form';
+import Posts from '../Posts/Posts';
+import Form from '../Form/Form';
 import useStyles from '../../styles';
 import Page from '../Page/Page';
+
+import styles from './Projects.module.css';
 
 
 const App = () =>{
@@ -20,10 +22,8 @@ const App = () =>{
 
 
     return(
-            <Container maxwidth="lg">
-                <AppBar className={classes.appBar} position="static" color="inherit">
-                    <Typography className={classes.heading} variant="h2" align="center">Anton Lui</Typography>
-                </AppBar>
+    <Page>
+        <div className={styles.card}>
                 <Grow in>
                     <Container>
                         <Grid container justify="space-between" alignItems="stretch" spacing={3}>
@@ -36,7 +36,14 @@ const App = () =>{
                         </Grid>
                     </Container>
                 </Grow>
-            </Container>
+        </div>
+    </Page>
+
+
+
+
+
+
     );
 }
 
